@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ExcludeSuite">
+  <test thread-count="5" name="Test">
+  <parameter name="Browser" value="chrome"></parameter>
+  <groups>
+<run><exclude name="smoke"></exclude></run>
+</groups>
+    <classes>
+      <class name="com.crm.proxima.Sample.CreateProductTest"/>
+      <class name="com.crm.proxima.Sample.SampleCreateOrganizationTest"/>
+      <class name="com.crm.proxima.Sample.SampleCreateContactTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- ExcludeSuite -->

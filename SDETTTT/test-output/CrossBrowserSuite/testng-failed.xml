@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [CrossBrowserSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="TestRunnerChrome(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.crm.proxima.Sample.CreateProductTest">
+        <methods>
+          <include name="loginToVtiger"/>
+          <include name="closeConnectionToDatabase"/>
+          <include name="createProductTest"/>
+          <include name="openBrowser"/>
+          <include name="createAndEditProductTest"/>
+          <include name="connectToDatabase"/>
+          <include name="logoutOfVtiger"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.crm.proxima.Sample.CreateProductTest -->
+      <class name="com.crm.proxima.Sample.SampleCreateContactTest">
+        <methods>
+          <include name="loginToVtiger"/>
+          <include name="closeConnectionToDatabase"/>
+          <include name="openBrowser"/>
+          <include name="createContactTest"/>
+          <include name="createContactAndDeleteTest"/>
+          <include name="connectToDatabase"/>
+          <include name="logoutOfVtiger"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.crm.proxima.Sample.SampleCreateContactTest -->
+    </classes>
+  </test> <!-- TestRunnerChrome(failed) -->
+  <test thread-count="5" parallel="tests" name="TestRunnerFirefox(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="com.crm.proxima.Sample.CreateProductTest">
+        <methods>
+          <include name="loginToVtiger"/>
+          <include name="closeConnectionToDatabase"/>
+          <include name="createProductTest"/>
+          <include name="openBrowser"/>
+          <include name="createAndEditProductTest"/>
+          <include name="connectToDatabase"/>
+          <include name="logoutOfVtiger"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.crm.proxima.Sample.CreateProductTest -->
+    </classes>
+  </test> <!-- TestRunnerFirefox(failed) -->
+</suite> <!-- Failed suite [CrossBrowserSuite] -->

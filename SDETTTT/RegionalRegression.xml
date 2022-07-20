@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegionalRegression">
+  <test thread-count="5" name="Test">
+  <parameter name="Browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.crm.proxima.Sample.CreateProductTest">
+      <methods>
+      <include name="createProductTest()"></include>
+      </methods>
+      </class>
+      <class name="com.crm.proxima.Sample.SampleCreateContactTest">
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- RegionalRegression -->
